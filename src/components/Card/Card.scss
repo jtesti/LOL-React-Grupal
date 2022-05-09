@@ -1,0 +1,97 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+        .card {
+            height: 310px;
+            width: 225px;
+            margin: 8px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+                &:hover > .card__name{
+                    background-color: #00667f;
+                    padding: 6% 12%;
+                    transition: .3s;
+                }
+                &:not(:hover) > .card__name{
+                    background-color: rgb(6, 28, 37);
+                    transition: .3s;
+                }
+                &:hover > ::after {
+                    transform: translate(150%, -50%) rotate(45deg);
+                    transition: .3s;
+                }
+                &:not(:hover) > ::after {
+                    transition: .3s;
+                }
+                &:hover > .card__img {
+                    transform: scale3d(1, 1, 1); 
+                    transition: .3s;
+                }
+                &:not(:hover) > .card__img {
+                    transition: .3s;
+                }
+                ::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: white;
+                    width: 15%;
+                    padding-top: 18%;
+                    transform: translate(50%, -50%) rotate(45deg);
+                }
+        
+                .card__img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    transform: scale3d(1.05, 1.05, 1);
+                        img {
+                            object-fit: cover;
+                            position: relative;
+                            height: 100%;
+                            width: 100%;
+                        }
+                }
+                .card__name {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgb(6, 28, 37);
+                    color: white;
+                    padding: 6% 8%;
+                    font-size: 19px;
+                    font-style: italic;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+        }
+}
+
+
+
+
+@media (max-width: 522px) {
+    .card {
+        height: 230px;
+        width: 170px;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 370px;
+        width: 285px;
+        margin: 8px;
+    }
+}

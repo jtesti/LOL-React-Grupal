@@ -1,0 +1,29 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 140px;
+    margin-bottom: 40px;
+        span {
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-style: italic;
+            letter-spacing: 1.6px;
+            line-height: 0.1;
+        }
+        h1{
+            font-size: calc(61.82px + 3.03vw);
+        }
+        p{
+            max-width: 460px;
+            margin: 0 auto;
+            font-weight: 100;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+
+}

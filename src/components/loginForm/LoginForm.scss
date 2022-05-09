@@ -1,0 +1,75 @@
+.pages {
+    width: 60%;
+    height: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+
+                .pages__element {
+                    margin: 15px;
+                    width: 90%;
+                }
+
+                label {
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: white;
+                }
+
+                input {
+                    width: 80%;
+                    text-align: center;
+                }
+
+                button {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 16px;
+                    padding: 8px 16px;
+                    background-color: red;
+                    border-radius: 7px;
+                    margin-top: 15px;
+                    text-decoration: none;
+                    border-bottom: 1px solid #191919;
+                    border-right: 1px solid #191919;
+                        &:active{
+                            border-top: 1px solid #191919;
+                            border-left: 1px solid #191919;
+                            border-bottom: none;
+                            border-right: none;
+                            transition: 300ms;
+                        }
+                }
+        }
+        .register-btn {
+            margin-bottom: 25px;
+        }
+}
+
+@media (min-width:768px) {
+    .pages {
+        width: 45%;
+    }
+}
+
+@media (min-width:1160px) {
+    .pages {
+        width: 35%;
+    }
+}
+
+@media (min-width:1360px) {
+    .pages {
+        width: 30%;
+    }
+}
